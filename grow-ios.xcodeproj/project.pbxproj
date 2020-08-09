@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76424E04C4600E49040 /* AppDelegate.swift */; };
 		BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76624E04C4600E49040 /* SceneDelegate.swift */; };
-		BABEF76924E04C4600E49040 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76824E04C4600E49040 /* ContentView.swift */; };
+		BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76824E04C4600E49040 /* WelcomeHeader.swift */; };
 		BABEF76B24E04C4800E49040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEF76A24E04C4800E49040 /* Assets.xcassets */; };
 		BABEF76E24E04C4800E49040 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABEF76D24E04C4800E49040 /* Preview Assets.xcassets */; };
 		BABEF77124E04C4800E49040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABEF76F24E04C4800E49040 /* LaunchScreen.storyboard */; };
 		BABEF77C24E04C4800E49040 /* grow_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF77B24E04C4800E49040 /* grow_iosTests.swift */; };
 		BABEF78724E04C4800E49040 /* grow_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF78624E04C4800E49040 /* grow_iosUITests.swift */; };
+		CD46FC5A24E0809D00EA0B15 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5924E0809600EA0B15 /* Cabin-Bold.ttf */; };
+		CD46FC5B24E080A100EA0B15 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5324E0809600EA0B15 /* Cabin-BoldItalic.ttf */; };
+		CD46FC5C24E080A100EA0B15 /* Cabin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5624E0809600EA0B15 /* Cabin-Italic.ttf */; };
+		CD46FC5D24E080A100EA0B15 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5824E0809600EA0B15 /* Cabin-Medium.ttf */; };
+		CD46FC5E24E080A100EA0B15 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5724E0809600EA0B15 /* Cabin-MediumItalic.ttf */; };
+		CD46FC5F24E080A100EA0B15 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5524E0809600EA0B15 /* Cabin-Regular.ttf */; };
+		CD46FC6024E080A100EA0B15 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5224E0809600EA0B15 /* Cabin-SemiBold.ttf */; };
+		CD46FC6124E080A100EA0B15 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5424E0809600EA0B15 /* Cabin-SemiBoldItalic.ttf */; };
+		CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6324E0844A00EA0B15 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,7 @@
 		BABEF76124E04C4600E49040 /* grow-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grow-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABEF76424E04C4600E49040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABEF76624E04C4600E49040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BABEF76824E04C4600E49040 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BABEF76824E04C4600E49040 /* WelcomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeHeader.swift; sourceTree = "<group>"; };
 		BABEF76A24E04C4800E49040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABEF76D24E04C4800E49040 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BABEF77024E04C4800E49040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,15 @@
 		BABEF78224E04C4800E49040 /* grow-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grow-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABEF78624E04C4800E49040 /* grow_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grow_iosUITests.swift; sourceTree = "<group>"; };
 		BABEF78824E04C4800E49040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD46FC5224E0809600EA0B15 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBold.ttf"; path = "../../../../Downloads/cabin/Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
+		CD46FC5324E0809600EA0B15 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-BoldItalic.ttf"; path = "../../../../Downloads/cabin/Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CD46FC5424E0809600EA0B15 /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBoldItalic.ttf"; path = "../../../../Downloads/cabin/Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		CD46FC5524E0809600EA0B15 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Regular.ttf"; path = "../../../../Downloads/cabin/Cabin-Regular.ttf"; sourceTree = "<group>"; };
+		CD46FC5624E0809600EA0B15 /* Cabin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Italic.ttf"; path = "../../../../Downloads/cabin/Cabin-Italic.ttf"; sourceTree = "<group>"; };
+		CD46FC5724E0809600EA0B15 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-MediumItalic.ttf"; path = "../../../../Downloads/cabin/Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CD46FC5824E0809600EA0B15 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Medium.ttf"; path = "../../../../Downloads/cabin/Cabin-Medium.ttf"; sourceTree = "<group>"; };
+		CD46FC5924E0809600EA0B15 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Bold.ttf"; path = "../../../../Downloads/cabin/Cabin-Bold.ttf"; sourceTree = "<group>"; };
+		CD46FC6324E0844A00EA0B15 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +117,15 @@
 		BABEF76324E04C4600E49040 /* grow-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CD46FC6224E0841100EA0B15 /* Views */,
 				BABEF76424E04C4600E49040 /* AppDelegate.swift */,
 				BABEF76624E04C4600E49040 /* SceneDelegate.swift */,
-				BABEF76824E04C4600E49040 /* ContentView.swift */,
 				BABEF76A24E04C4800E49040 /* Assets.xcassets */,
 				BABEF76F24E04C4800E49040 /* LaunchScreen.storyboard */,
 				BABEF77224E04C4800E49040 /* Info.plist */,
+				CD46FC5124E0808600EA0B15 /* Fonts */,
 				BABEF76C24E04C4800E49040 /* Preview Content */,
+				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 			);
 			path = "grow-ios";
 			sourceTree = "<group>";
@@ -134,6 +154,29 @@
 				BABEF78824E04C4800E49040 /* Info.plist */,
 			);
 			path = "grow-iosUITests";
+			sourceTree = "<group>";
+		};
+		CD46FC5124E0808600EA0B15 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CD46FC5924E0809600EA0B15 /* Cabin-Bold.ttf */,
+				CD46FC5324E0809600EA0B15 /* Cabin-BoldItalic.ttf */,
+				CD46FC5624E0809600EA0B15 /* Cabin-Italic.ttf */,
+				CD46FC5824E0809600EA0B15 /* Cabin-Medium.ttf */,
+				CD46FC5724E0809600EA0B15 /* Cabin-MediumItalic.ttf */,
+				CD46FC5524E0809600EA0B15 /* Cabin-Regular.ttf */,
+				CD46FC5224E0809600EA0B15 /* Cabin-SemiBold.ttf */,
+				CD46FC5424E0809600EA0B15 /* Cabin-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CD46FC6224E0841100EA0B15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BABEF76824E04C4600E49040 /* WelcomeHeader.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,9 +283,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD46FC5B24E080A100EA0B15 /* Cabin-BoldItalic.ttf in Resources */,
+				CD46FC6024E080A100EA0B15 /* Cabin-SemiBold.ttf in Resources */,
+				CD46FC6124E080A100EA0B15 /* Cabin-SemiBoldItalic.ttf in Resources */,
 				BABEF77124E04C4800E49040 /* LaunchScreen.storyboard in Resources */,
+				CD46FC5A24E0809D00EA0B15 /* Cabin-Bold.ttf in Resources */,
+				CD46FC5E24E080A100EA0B15 /* Cabin-MediumItalic.ttf in Resources */,
+				CD46FC5D24E080A100EA0B15 /* Cabin-Medium.ttf in Resources */,
 				BABEF76E24E04C4800E49040 /* Preview Assets.xcassets in Resources */,
+				CD46FC5C24E080A100EA0B15 /* Cabin-Italic.ttf in Resources */,
 				BABEF76B24E04C4800E49040 /* Assets.xcassets in Resources */,
+				CD46FC5F24E080A100EA0B15 /* Cabin-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +320,8 @@
 			files = (
 				BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */,
 				BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */,
-				BABEF76924E04C4600E49040 /* ContentView.swift in Sources */,
+				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
+				BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,14 +488,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"grow-ios/Preview Content\"";
-				DEVELOPMENT_TEAM = Q6QW9S8Q2P;
+				DEVELOPMENT_TEAM = V79782M5XQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "grow-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hackthis.grow-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "hackthis.grow-ios-proj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,14 +509,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"grow-ios/Preview Content\"";
-				DEVELOPMENT_TEAM = Q6QW9S8Q2P;
+				DEVELOPMENT_TEAM = V79782M5XQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "grow-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "hackthis.grow-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "hackthis.grow-ios-proj";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
