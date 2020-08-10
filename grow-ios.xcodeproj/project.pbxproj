@@ -24,6 +24,8 @@
 		CD46FC6024E080A100EA0B15 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5224E0809600EA0B15 /* Cabin-SemiBold.ttf */; };
 		CD46FC6124E080A100EA0B15 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5424E0809600EA0B15 /* Cabin-SemiBoldItalic.ttf */; };
 		CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6324E0844A00EA0B15 /* Home.swift */; };
+		CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6524E085F000EA0B15 /* FocusActivity.swift */; };
+		CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		CD46FC5824E0809600EA0B15 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Medium.ttf"; path = "../../../../Downloads/cabin/Cabin-Medium.ttf"; sourceTree = "<group>"; };
 		CD46FC5924E0809600EA0B15 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Bold.ttf"; path = "../../../../Downloads/cabin/Cabin-Bold.ttf"; sourceTree = "<group>"; };
 		CD46FC6324E0844A00EA0B15 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CD46FC6524E085F000EA0B15 /* FocusActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivity.swift; sourceTree = "<group>"; };
+		CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivityList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				CD46FC6224E0841100EA0B15 /* Views */,
+				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 				BABEF76424E04C4600E49040 /* AppDelegate.swift */,
 				BABEF76624E04C4600E49040 /* SceneDelegate.swift */,
 				BABEF76A24E04C4800E49040 /* Assets.xcassets */,
@@ -125,7 +130,6 @@
 				BABEF77224E04C4800E49040 /* Info.plist */,
 				CD46FC5124E0808600EA0B15 /* Fonts */,
 				BABEF76C24E04C4800E49040 /* Preview Content */,
-				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 			);
 			path = "grow-ios";
 			sourceTree = "<group>";
@@ -175,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				BABEF76824E04C4600E49040 /* WelcomeHeader.swift */,
+				CD46FC6524E085F000EA0B15 /* FocusActivity.swift */,
+				CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -321,7 +327,9 @@
 				BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */,
 				BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */,
 				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
+				CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */,
 				BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */,
+				CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

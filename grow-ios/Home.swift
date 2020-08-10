@@ -10,7 +10,10 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            WelcomeHeader(name: "Abhishek", streak: 5)
+            Spacer()
+        }.padding(.top, 50.0)
     }
 }
 
