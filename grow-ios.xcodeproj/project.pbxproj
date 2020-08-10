@@ -15,14 +15,6 @@
 		BABEF77124E04C4800E49040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABEF76F24E04C4800E49040 /* LaunchScreen.storyboard */; };
 		BABEF77C24E04C4800E49040 /* grow_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF77B24E04C4800E49040 /* grow_iosTests.swift */; };
 		BABEF78724E04C4800E49040 /* grow_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF78624E04C4800E49040 /* grow_iosUITests.swift */; };
-		CD46FC5A24E0809D00EA0B15 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5924E0809600EA0B15 /* Cabin-Bold.ttf */; };
-		CD46FC5B24E080A100EA0B15 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5324E0809600EA0B15 /* Cabin-BoldItalic.ttf */; };
-		CD46FC5C24E080A100EA0B15 /* Cabin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5624E0809600EA0B15 /* Cabin-Italic.ttf */; };
-		CD46FC5D24E080A100EA0B15 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5824E0809600EA0B15 /* Cabin-Medium.ttf */; };
-		CD46FC5E24E080A100EA0B15 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5724E0809600EA0B15 /* Cabin-MediumItalic.ttf */; };
-		CD46FC5F24E080A100EA0B15 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5524E0809600EA0B15 /* Cabin-Regular.ttf */; };
-		CD46FC6024E080A100EA0B15 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5224E0809600EA0B15 /* Cabin-SemiBold.ttf */; };
-		CD46FC6124E080A100EA0B15 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD46FC5424E0809600EA0B15 /* Cabin-SemiBoldItalic.ttf */; };
 		CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6324E0844A00EA0B15 /* Home.swift */; };
 		CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6524E085F000EA0B15 /* FocusActivity.swift */; };
 		CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */; };
@@ -60,14 +52,14 @@
 		BABEF78224E04C4800E49040 /* grow-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "grow-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABEF78624E04C4800E49040 /* grow_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grow_iosUITests.swift; sourceTree = "<group>"; };
 		BABEF78824E04C4800E49040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD46FC5224E0809600EA0B15 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBold.ttf"; path = "../../../../Downloads/cabin/Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
-		CD46FC5324E0809600EA0B15 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-BoldItalic.ttf"; path = "../../../../Downloads/cabin/Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
-		CD46FC5424E0809600EA0B15 /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-SemiBoldItalic.ttf"; path = "../../../../Downloads/cabin/Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
-		CD46FC5524E0809600EA0B15 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Regular.ttf"; path = "../../../../Downloads/cabin/Cabin-Regular.ttf"; sourceTree = "<group>"; };
-		CD46FC5624E0809600EA0B15 /* Cabin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Italic.ttf"; path = "../../../../Downloads/cabin/Cabin-Italic.ttf"; sourceTree = "<group>"; };
-		CD46FC5724E0809600EA0B15 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-MediumItalic.ttf"; path = "../../../../Downloads/cabin/Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
-		CD46FC5824E0809600EA0B15 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Medium.ttf"; path = "../../../../Downloads/cabin/Cabin-Medium.ttf"; sourceTree = "<group>"; };
-		CD46FC5924E0809600EA0B15 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cabin-Bold.ttf"; path = "../../../../Downloads/cabin/Cabin-Bold.ttf"; sourceTree = "<group>"; };
+		BABEF79424E09E5800E49040 /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
+		BABEF79524E09E5800E49040 /* Cabin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic.ttf"; sourceTree = "<group>"; };
+		BABEF79624E09E5800E49040 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
+		BABEF79724E09E5800E49040 /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		BABEF79824E09E5900E49040 /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
+		BABEF79924E09E5900E49040 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		BABEF79A24E09E5900E49040 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
+		BABEF79B24E09E5900E49040 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
 		CD46FC6324E0844A00EA0B15 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CD46FC6524E085F000EA0B15 /* FocusActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivity.swift; sourceTree = "<group>"; };
 		CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivityList.swift; sourceTree = "<group>"; };
@@ -163,14 +155,14 @@
 		CD46FC5124E0808600EA0B15 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				CD46FC5924E0809600EA0B15 /* Cabin-Bold.ttf */,
-				CD46FC5324E0809600EA0B15 /* Cabin-BoldItalic.ttf */,
-				CD46FC5624E0809600EA0B15 /* Cabin-Italic.ttf */,
-				CD46FC5824E0809600EA0B15 /* Cabin-Medium.ttf */,
-				CD46FC5724E0809600EA0B15 /* Cabin-MediumItalic.ttf */,
-				CD46FC5524E0809600EA0B15 /* Cabin-Regular.ttf */,
-				CD46FC5224E0809600EA0B15 /* Cabin-SemiBold.ttf */,
-				CD46FC5424E0809600EA0B15 /* Cabin-SemiBoldItalic.ttf */,
+				BABEF79824E09E5900E49040 /* Cabin-Bold.ttf */,
+				BABEF79924E09E5900E49040 /* Cabin-BoldItalic.ttf */,
+				BABEF79524E09E5800E49040 /* Cabin-Italic.ttf */,
+				BABEF79424E09E5800E49040 /* Cabin-Medium.ttf */,
+				BABEF79624E09E5800E49040 /* Cabin-MediumItalic.ttf */,
+				BABEF79A24E09E5900E49040 /* Cabin-Regular.ttf */,
+				BABEF79B24E09E5900E49040 /* Cabin-SemiBold.ttf */,
+				BABEF79724E09E5800E49040 /* Cabin-SemiBoldItalic.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -289,17 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD46FC5B24E080A100EA0B15 /* Cabin-BoldItalic.ttf in Resources */,
-				CD46FC6024E080A100EA0B15 /* Cabin-SemiBold.ttf in Resources */,
-				CD46FC6124E080A100EA0B15 /* Cabin-SemiBoldItalic.ttf in Resources */,
 				BABEF77124E04C4800E49040 /* LaunchScreen.storyboard in Resources */,
-				CD46FC5A24E0809D00EA0B15 /* Cabin-Bold.ttf in Resources */,
-				CD46FC5E24E080A100EA0B15 /* Cabin-MediumItalic.ttf in Resources */,
-				CD46FC5D24E080A100EA0B15 /* Cabin-Medium.ttf in Resources */,
 				BABEF76E24E04C4800E49040 /* Preview Assets.xcassets in Resources */,
-				CD46FC5C24E080A100EA0B15 /* Cabin-Italic.ttf in Resources */,
 				BABEF76B24E04C4800E49040 /* Assets.xcassets in Resources */,
-				CD46FC5F24E080A100EA0B15 /* Cabin-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
