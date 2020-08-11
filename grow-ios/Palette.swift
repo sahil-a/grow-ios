@@ -11,6 +11,8 @@ import SwiftUI
 
 extension Color {
     static let offwhite = Color(red: 225/255, green: 225/255, blue: 235/255)
-    static let darkStart = Color(red: 50/255, green: 60/255, blue: 65/255)
-    static let darkEnd = Color(red: 25/255, green: 25/255, blue: 35/255)
+    static let green1 = Color(red: 55/255, green: 146/255, blue: 9/255)
+    static let green2 = Color(red: 197/255, green: 241/255, blue: 132/255)
+    static let green3 = Color(red: 115/255, green: 164/255, blue: 63/255)
+    
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA73A80224E245180042F390 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80124E245180042F390 /* Login.swift */; };
 		BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80424E245AF0042F390 /* LoginHeader.swift */; };
-		BA73A80724E248290042F390 /* Pallete.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80624E248290042F390 /* Pallete.swift */; };
+		BA73A80724E248290042F390 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80624E248290042F390 /* Palette.swift */; };
 		BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76424E04C4600E49040 /* AppDelegate.swift */; };
 		BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76624E04C4600E49040 /* SceneDelegate.swift */; };
 		BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76824E04C4600E49040 /* WelcomeHeader.swift */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		BA73A80124E245180042F390 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BA73A80424E245AF0042F390 /* LoginHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeader.swift; sourceTree = "<group>"; };
-		BA73A80624E248290042F390 /* Pallete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pallete.swift; sourceTree = "<group>"; };
+		BA73A80624E248290042F390 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		BABEF76124E04C4600E49040 /* grow-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grow-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABEF76424E04C4600E49040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABEF76624E04C4600E49040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		BABEF76324E04C4600E49040 /* grow-ios */ = {
 			isa = PBXGroup;
 			children = (
-				BA73A80624E248290042F390 /* Pallete.swift */,
+				BA73A80624E248290042F390 /* Palette.swift */,
 				CD46FC6224E0841100EA0B15 /* Views */,
 				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 				BA73A80024E245050042F390 /* Screens */,
@@ -337,7 +337,7 @@
 				BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */,
 				BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */,
 				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
-				BA73A80724E248290042F390 /* Pallete.swift in Sources */,
+				BA73A80724E248290042F390 /* Palette.swift in Sources */,
 				CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */,
 				BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */,
 				BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */,
