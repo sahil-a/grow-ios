@@ -10,7 +10,13 @@ import SwiftUI
 
 struct Login: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack {
+                LoginHeader()
+                Spacer()
+            }.padding(.top, 40.0)
+            Spacer()
+        }.padding(.leading, 20.0)
     }
 }
 
