@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  WelcomeHeader.swift
 //  grow-ios
 //
 //  Created by Sahil Ambardekar on 8/9/20.
@@ -12,20 +12,19 @@ struct WelcomeHeader: View {
     let name: String
     let streak: Int
     var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                HStack {
-                    Text("Hello")
-                        .font(.custom("Cabin-Bold", size: 24))
-                        .foregroundColor(Color(red: 64/255, green: 100/255, blue: 25/255)) +
-                    Text(", \(name)")
-                        .font(.custom("Cabin-Bold", size: 24))
-                }
-                Text("You're on a \(streak) day streak!")
-                    .font(.custom("Cabin-Bold", size: 30))
+        VStack(alignment: .leading) {
+            HStack {
+                Text("Hello")
+                    .font(.custom("Cabin-Bold", size: 24))
+                    .foregroundColor(Color(red: 64/255, green: 100/255, blue: 25/255)) +
+                Text(", \(name)")
+                    .font(.custom("Cabin-Bold", size: 24))
+            }
+            Text("You're on a \(streak) day streak!")
+                .font(.custom("Cabin-Bold", size: 30))
+                .fontWeight(.bold)
             }
         }
-    }
 }
 
 struct WelcomeHeader_Previews: PreviewProvider {
