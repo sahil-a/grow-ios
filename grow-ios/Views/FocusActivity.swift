@@ -12,7 +12,7 @@ struct FocusActivity: View {
     let color: Color
     let text: String
     var body: some View {
-        ZStack {
+        ZStack(alignment: .topLeading){
             RoundedRectangle(cornerRadius: 15)
                 .frame(width: 100, height: 135)
                 .foregroundColor(color)
@@ -24,7 +24,7 @@ struct FocusActivity: View {
                 Text(text)
                     .foregroundColor(.white)
                     .font(.custom("Cabin-Bold", size: 24))
-            }.padding([.top])
+            }.padding([.top, .leading], 10)
         }
     }
 }
