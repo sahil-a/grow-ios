@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = FocusActivity(color: Color(red: 115/255, green: 129/255, blue: 251/255), text: "1h")
+        let contentView = Home()
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

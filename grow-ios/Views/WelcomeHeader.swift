@@ -20,11 +20,17 @@ struct WelcomeHeader: View {
                 Text(", \(name)")
                     .font(.custom("Cabin-Bold", size: 24))
             }
-            Text("you're on a \(streak) day streak!")
-                .font(.custom("Cabin-Bold", size: 30))
-                .fontWeight(.bold)
+            if streak != 0 {
+                Text("you're on a \(streak) day streak!")
+                    .font(.custom("Cabin-Bold", size: 30))
+                    .fontWeight(.bold)
+            } else {
+                 Text("make sure to focus today!")
+                    .font(.custom("Cabin-Bold", size: 30))
+                    .fontWeight(.bold)
             }
         }
+    }
 }
 
 struct WelcomeHeader_Previews: PreviewProvider {
