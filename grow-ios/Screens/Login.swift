@@ -8,15 +8,62 @@
 
 import SwiftUI
 
-struct Login: View {
+struct Background<Content: View>: View {
+    private var content: Content
+    
+    init(@ViewBuilder content: @escaping () -> Content) {
+        self.content = content()
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            LoginHeader()
-            LoginField(title: "who are you?", placeholder: "name").padding(.top, 50)
-            LoginField(title: "what is your plant's code?", placeholder: "plant code").padding(.top, 20)
-            Spacer()
-        }.padding(.top, 40.0)
-            .padding(.leading, -20.0)
+        Color.white
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            .overlay(content)
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
+
+struct Login: View {
+    @State var name: String = ""
+    @State var plantCode: String = ""
+    var body: some View {
+        Background {
+            VStack(alignment: .leading) {
+                LoginHeader().padding(.top, 50)
+                LoginField(title: "who are you?", placeholder: "name", text: self.$name).padding(.top, 50)
+                LoginField(title: "what is your plant's code?", placeholder: "plant code", text: self.$plantCode).padding(.top, 20)
+                Button(action: {
+                    
+                }){
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 7).stroke(Color.green1, lineWidth: 2).frame(width: 100, height: 45).foregroundColor(Color.clear)
+                        Text("enter").font(.custom("Cabin-Regular", size: 20))
+                            .fontWeight(.regular).foregroundColor(Color.green1)
+                    }
+                }.padding(.top, 45)
+                Spacer()
+                HStack {
+                    Image("weow 3")
+                        .resizable()
+                        .frame(width: 240, height: 168, alignment: .leading)
+                        .padding(.bottom, 50)
+                    Spacer()
+                }.padding(.leading, -30).padding(.top, 25)
+            }.padding(.top, 40.0)
+                .padding(.leading, 30)
+            
+        }.onTapGesture {
+            self.endEditing()
+        }
+    }
+    private func endEditing() {
+        UIApplication.shared.endEditing()
     }
 }
 
