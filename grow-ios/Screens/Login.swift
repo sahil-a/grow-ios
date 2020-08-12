@@ -10,13 +10,13 @@ import SwiftUI
 
 struct Login: View {
     var body: some View {
-        HStack {
-            VStack {
-                LoginHeader()
-                Spacer()
-            }.padding(.top, 40.0)
+        VStack(alignment: .leading) {
+            LoginHeader()
+            LoginField(title: "who are you?", placeholder: "name").padding(.top, 50)
+            LoginField(title: "what is your plant's code?", placeholder: "plant code").padding(.top, 20)
             Spacer()
-        }.padding(.leading, 20.0)
+        }.padding(.top, 40.0)
+            .padding(.leading, -20.0)
     }
 }
 
