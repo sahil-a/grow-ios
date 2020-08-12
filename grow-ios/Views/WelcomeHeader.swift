@@ -14,13 +14,13 @@ struct WelcomeHeader: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("Hello")
+                Text("hello")
                     .font(.custom("Cabin-Bold", size: 24))
                     .foregroundColor(Color(red: 64/255, green: 100/255, blue: 25/255)) +
                 Text(", \(name)")
                     .font(.custom("Cabin-Bold", size: 24))
             }
-            Text("You're on a \(streak) day streak!")
+            Text("you're on a \(streak) day streak!")
                 .font(.custom("Cabin-Bold", size: 30))
                 .fontWeight(.bold)
             }

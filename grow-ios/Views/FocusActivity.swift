@@ -16,7 +16,7 @@ struct FocusActivity: View {
             RoundedRectangle(cornerRadius: 15)
                 .frame(width: 100, height: 135)
                 .foregroundColor(color)
-                .shadow(color: color.opacity(0.35), radius: 15, x: 0, y: 33)
+                .shadow(color: Color.black.opacity(0.25), radius: 12, x: 0, y: 4)
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
                     .frame(width: 40, height: 40)
@@ -31,7 +31,7 @@ struct FocusActivity: View {
 
 struct FocusActivity_Previews: PreviewProvider {
     static var previews: some View {
-        FocusActivity(color: Color(red: 115/255, green: 129/255, blue: 251/255), text: "1h")
+        FocusActivity(color: Color.green1, text: "1h")
         
     }
 }

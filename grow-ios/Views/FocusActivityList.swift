@@ -7,10 +7,28 @@
 //
 
 import SwiftUI
+ 
+let nums = [1,2,3,4]
 
 struct FocusActivityList: View {
     var body: some View {
-        Text("E")
+    
+        VStack(alignment: .leading) {
+            Text("focus activities")
+                .font(.custom("Cabin-Bold", size: 24))
+                .padding(.leading, 30)
+            
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 30) {
+                    ForEach(nums, id: \.self) { num in
+                        FocusActivity(color: Color.green3, text: "\(num)")
+                    }
+                }
+                .padding(.leading, 30)
+                .frame(height: 200)
+            }
+        }
     }
 }
 

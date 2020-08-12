@@ -99,6 +99,7 @@
 		BA73A80024E245050042F390 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 				BA73A80124E245180042F390 /* Login.swift */,
 			);
 			path = Screens;
@@ -137,7 +138,6 @@
 			children = (
 				BA73A80624E248290042F390 /* Palette.swift */,
 				CD46FC6224E0841100EA0B15 /* Views */,
-				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 				BA73A80024E245050042F390 /* Screens */,
 				BABEF76424E04C4600E49040 /* AppDelegate.swift */,
 				BABEF76624E04C4600E49040 /* SceneDelegate.swift */,
