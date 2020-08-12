@@ -13,6 +13,7 @@
 		BA73A80224E245180042F390 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80124E245180042F390 /* Login.swift */; };
 		BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80424E245AF0042F390 /* LoginHeader.swift */; };
 		BA73A80724E248290042F390 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80624E248290042F390 /* Palette.swift */; };
+		BA79175124E382340012EDFC /* MaterialUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79175024E382340012EDFC /* MaterialUITextField.swift */; };
 		BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76424E04C4600E49040 /* AppDelegate.swift */; };
 		BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76624E04C4600E49040 /* SceneDelegate.swift */; };
 		BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF76824E04C4600E49040 /* WelcomeHeader.swift */; };
@@ -56,6 +57,7 @@
 		BA73A80124E245180042F390 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BA73A80424E245AF0042F390 /* LoginHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeader.swift; sourceTree = "<group>"; };
 		BA73A80624E248290042F390 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		BA79175024E382340012EDFC /* MaterialUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialUITextField.swift; sourceTree = "<group>"; };
 		BABEF76124E04C4600E49040 /* grow-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grow-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABEF76424E04C4600E49040 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABEF76624E04C4600E49040 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				CD46FC6524E085F000EA0B15 /* FocusActivity.swift */,
 				BA73A80324E245900042F390 /* Login */,
 				CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */,
+				BA79175024E382340012EDFC /* MaterialUITextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA73A80224E245180042F390 /* Login.swift in Sources */,
+				BA79175124E382340012EDFC /* MaterialUITextField.swift in Sources */,
 				BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */,
 				BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */,
 				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
