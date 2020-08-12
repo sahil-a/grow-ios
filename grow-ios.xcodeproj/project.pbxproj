@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6324E0844A00EA0B15 /* Home.swift */; };
 		CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6524E085F000EA0B15 /* FocusActivity.swift */; };
 		CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */; };
+		CDB8CA6F24E386F800E7E3D4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8CA6E24E386F800E7E3D4 /* Timer.swift */; };
 		F318B59850AF17BBCBFD8BDC /* Pods_grow_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D41AF2D2DB805D9F9A64F9 /* Pods_grow_iosTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		CD46FC6324E0844A00EA0B15 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CD46FC6524E085F000EA0B15 /* FocusActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivity.swift; sourceTree = "<group>"; };
 		CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivityList.swift; sourceTree = "<group>"; };
+		CDB8CA6E24E386F800E7E3D4 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		D5D7D8939E29120E3C35FFE0 /* Pods-grow-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-ios.release.xcconfig"; path = "Target Support Files/Pods-grow-ios/Pods-grow-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,13 +135,13 @@
 				9A7CF448E744B80F344F344E /* Pods-grow-iosTests.debug.xcconfig */,
 				33FAE7671A85AAC622F145AA /* Pods-grow-iosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		BA73A80024E245050042F390 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CDB8CA6E24E386F800E7E3D4 /* Timer.swift */,
 				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 				BA73A80124E245180042F390 /* Login.swift */,
 			);
@@ -494,6 +496,7 @@
 				BA595B0224E379A10067ED08 /* LoginField.swift in Sources */,
 				BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */,
 				BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */,
+				CDB8CA6F24E386F800E7E3D4 /* Timer.swift in Sources */,
 				CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

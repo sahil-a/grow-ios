@@ -21,7 +21,7 @@ struct FocusActivityList: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
                     ForEach(nums, id: \.self) { num in
-                        NavigationLink(destination: FocusActivity(color: Color.gray1, text: "\(num)")) {
+                        NavigationLink(destination: FocusTime(time: "1h")) {
                             FocusActivity(color: Color.green3, text: "\(num)")
                         }
                     }
