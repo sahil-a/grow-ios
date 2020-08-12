@@ -18,11 +18,12 @@ struct FocusActivityList: View {
                 .font(.custom("Cabin-Bold", size: 24))
                 .padding(.leading, 30)
             
-            
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
                     ForEach(nums, id: \.self) { num in
-                        FocusActivity(color: Color.green3, text: "\(num)")
+                        NavigationLink(destination: FocusActivity(color: Color.gray1, text: "\(num)")) {
+                            FocusActivity(color: Color.green3, text: "\(num)")
+                        }
                     }
                     // TODO: insert custom FocusActivity
                 }
