@@ -23,6 +23,7 @@ struct FocusActivityList: View {
                     ForEach(nums, id: \.self) { num in
                         NavigationLink(destination: FocusTime(time: "1h")) {
                             FocusActivity(color: Color.green3, text: "\(num)")
+                                
                         }
                     }
                     // TODO: insert custom FocusActivity
