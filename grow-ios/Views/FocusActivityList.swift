@@ -24,6 +24,7 @@ struct FocusActivityList: View {
                     ForEach(nums, id: \.self) { num in
                         FocusActivity(color: Color.green3, text: "\(num)")
                     }
+                    // TODO: insert custom FocusActivity
                 }
                 .padding(.leading, 30)
                 .frame(height: 200)
