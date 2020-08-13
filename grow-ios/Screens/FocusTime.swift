@@ -17,39 +17,50 @@ struct FocusTime: View {
     let startTimeSeconds: Int
     let time: String
     var body: some View {
-        VStack(alignment: .center) {
-            Text("\(time) focus")
-                .foregroundColor(Color.green1)
-                .font(.custom("Cabin-Bold", size: 24))
-            Spacer()
-            ZStack {
-                Pulsation()
-                Track()
-                Text("\(getFormattedTime(seconds: timerManager.secondsLeft))")
-                    .font(.custom("Cabin-Bold", size: 65))
-                    .foregroundColor(Color.green3)
-                    .onAppear() {
-                        self.timerManager.setTimerLength(seconds: self.startTimeSeconds )
+        ZStack(alignment: .bottom) {
+            VStack(alignment: .center) {
+                Text("\(time) focus")
+                    .foregroundColor(Color.green1)
+                    .font(.custom("Cabin-Bold", size: 24))
+                Spacer()
+                if self.timerManager.secondsLeft != 0 {
+                    ZStack {
+                        Pulsation()
+                        Track()
+                        Text("\(getFormattedTime(seconds: timerManager.secondsLeft))")
+                            .font(.custom("Cabin-Bold", size: 65))
+                            .foregroundColor(Color.green3)
+                            .onAppear() {
+                                self.timerManager.setTimerLength(seconds: self.startTimeSeconds )
+                        }
+                        Outline(percentage: CGFloat(Float(self.timerManager.secondsLeft) / Float(self.startTimeSeconds) * 100))
+                        
+                    }
+                } else {
+                    Text("Completed")
                 }
-                Outline(percentage: CGFloat(Float(self.timerManager.secondsLeft) / Float(self.startTimeSeconds) * 100))
-                
+                Spacer()
+                Image(systemName: timerManager.timerMode == .running ? "pause.circle.fill" : "play.circle.fill")
+                    .resizable()
+                    .foregroundColor(Color.green1)
+                    .frame(width: 75, height: 75)
+                    .padding(.bottom, 50)
+                    .onTapGesture(perform: {
+                    if self.timerManager.timerMode == .initial {
+                        self.timerManager.setTimerLength(seconds: self.startTimeSeconds)
+                    }
+                    self.timerManager.timerMode == .running ? self.timerManager.pause() : self.timerManager.start()
+                    
+                    })
+
+            }.padding(.top, 60)
+             .navigationBarBackButtonHidden(true)
+            if self.timerManager.secondsLeft == 0 {
+                ConfettiLottie()
+                    .padding(.bottom, -10)
             }
-            Spacer()
-            Image(systemName: timerManager.timerMode == .running ? "pause.circle.fill" : "play.circle.fill")
-                .resizable()
-                .foregroundColor(Color.green1)
-                .frame(width: 75, height: 75)
-                .padding(.bottom, 50)
-                .onTapGesture(perform: {
-                if self.timerManager.timerMode == .initial {
-                    self.timerManager.setTimerLength(seconds: self.startTimeSeconds)
-                }
-                self.timerManager.timerMode == .running ? self.timerManager.pause() : self.timerManager.start()
-                
-                })
-                
-        }.padding(.top, 60)
-        .navigationBarBackButtonHidden(true)
+            //PlantLottie()
+        }
     }
 }
 

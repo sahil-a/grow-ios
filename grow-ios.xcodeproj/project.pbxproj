@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,6 +26,23 @@
 		BABEF78724E04C4800E49040 /* grow_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF78624E04C4800E49040 /* grow_iosUITests.swift */; };
 		CD06438A24E4B61A007FD443 /* TimerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06438924E4B61A007FD443 /* TimerTest.swift */; };
 		CD06438E24E4B9B0007FD443 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06438D24E4B9B0007FD443 /* TimerManager.swift */; };
+		CD07162D24E5B58F00FC2A06 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CD07162C24E5B58F00FC2A06 /* Lottie */; };
+		CD07162F24E5B5E400FC2A06 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD07162E24E5B5E400FC2A06 /* LottieView.swift */; };
+		CD07163124E5B61F00FC2A06 /* Confetti.json in Resources */ = {isa = PBXBuildFile; fileRef = CD07163024E5B61F00FC2A06 /* Confetti.json */; };
+		CD07163324E5B6F300FC2A06 /* ConfettiLottie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD07163224E5B6F300FC2A06 /* ConfettiLottie.swift */; };
+		CD07163524E5C40900FC2A06 /* Working.json in Resources */ = {isa = PBXBuildFile; fileRef = CD07163424E5C40900FC2A06 /* Working.json */; };
+		CD07163724E5C44100FC2A06 /* ManLottie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD07163624E5C44100FC2A06 /* ManLottie.swift */; };
+		CD07163924E5CDF300FC2A06 /* PlantLottie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD07163824E5CDF300FC2A06 /* PlantLottie.swift */; };
+		CD07163B24E5CE1100FC2A06 /* Plant.json in Resources */ = {isa = PBXBuildFile; fileRef = CD07163A24E5CE1100FC2A06 /* Plant.json */; };
+		CD07163C24E5EBDD00FC2A06 /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79824E09E5900E49040 /* Cabin-Bold.ttf */; };
+		CD07163D24E5EBDD00FC2A06 /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79924E09E5900E49040 /* Cabin-BoldItalic.ttf */; };
+		CD07163E24E5EBDD00FC2A06 /* Cabin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79524E09E5800E49040 /* Cabin-Italic.ttf */; };
+		CD07163F24E5EBDD00FC2A06 /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79424E09E5800E49040 /* Cabin-Medium.ttf */; };
+		CD07164024E5EBDD00FC2A06 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79624E09E5800E49040 /* Cabin-MediumItalic.ttf */; };
+		CD07164124E5EBDD00FC2A06 /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79A24E09E5900E49040 /* Cabin-Regular.ttf */; };
+		CD07164224E5EBDD00FC2A06 /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79B24E09E5900E49040 /* Cabin-SemiBold.ttf */; };
+		CD07164324E5EBDD00FC2A06 /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BABEF79724E09E5800E49040 /* Cabin-SemiBoldItalic.ttf */; };
+		CD07164524E5ECDF00FC2A06 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD07164424E5ECDF00FC2A06 /* Token.swift */; };
 		CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6324E0844A00EA0B15 /* Home.swift */; };
 		CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6524E085F000EA0B15 /* FocusActivity.swift */; };
 		CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */; };
@@ -90,6 +107,14 @@
 		C56B1F26BEFB6CA5E11030FA /* Pods-grow-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-ios.debug.xcconfig"; path = "Target Support Files/Pods-grow-ios/Pods-grow-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		CD06438924E4B61A007FD443 /* TimerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTest.swift; sourceTree = "<group>"; };
 		CD06438D24E4B9B0007FD443 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		CD07162E24E5B5E400FC2A06 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		CD07163024E5B61F00FC2A06 /* Confetti.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Confetti.json; sourceTree = "<group>"; };
+		CD07163224E5B6F300FC2A06 /* ConfettiLottie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiLottie.swift; sourceTree = "<group>"; };
+		CD07163424E5C40900FC2A06 /* Working.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Working.json; sourceTree = "<group>"; };
+		CD07163624E5C44100FC2A06 /* ManLottie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManLottie.swift; sourceTree = "<group>"; };
+		CD07163824E5CDF300FC2A06 /* PlantLottie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLottie.swift; sourceTree = "<group>"; };
+		CD07163A24E5CE1100FC2A06 /* Plant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Plant.json; sourceTree = "<group>"; };
+		CD07164424E5ECDF00FC2A06 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		CD46FC6324E0844A00EA0B15 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CD46FC6524E085F000EA0B15 /* FocusActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivity.swift; sourceTree = "<group>"; };
 		CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivityList.swift; sourceTree = "<group>"; };
@@ -103,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D1336511A8C17150E791810 /* Pods_grow_ios.framework in Frameworks */,
+				CD07162D24E5B58F00FC2A06 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +198,10 @@
 			isa = PBXGroup;
 			children = (
 				BABEF76324E04C4600E49040 /* grow-ios */,
+				BA24CB1724E4E2C500553C4A /* GoogleService-Info.plist */,
+				CD07163024E5B61F00FC2A06 /* Confetti.json */,
+				CD07163A24E5CE1100FC2A06 /* Plant.json */,
+				CD07163424E5C40900FC2A06 /* Working.json */,
 				BABEF77A24E04C4800E49040 /* grow-iosTests */,
 				BABEF78524E04C4800E49040 /* grow-iosUITests */,
 				BABEF76224E04C4600E49040 /* Products */,
@@ -193,14 +223,13 @@
 		BABEF76324E04C4600E49040 /* grow-ios */ = {
 			isa = PBXGroup;
 			children = (
-				BA24CB1724E4E2C500553C4A /* GoogleService-Info.plist */,
+				BABEF76424E04C4600E49040 /* AppDelegate.swift */,
+				BABEF76624E04C4600E49040 /* SceneDelegate.swift */,
 				BA24CB1924E4E3CA00553C4A /* FirebaseHelper.swift */,
 				BA73A80624E248290042F390 /* Palette.swift */,
 				CD06438D24E4B9B0007FD443 /* TimerManager.swift */,
 				CD46FC6224E0841100EA0B15 /* Views */,
 				BA73A80024E245050042F390 /* Screens */,
-				BABEF76424E04C4600E49040 /* AppDelegate.swift */,
-				BABEF76624E04C4600E49040 /* SceneDelegate.swift */,
 				BABEF76A24E04C4800E49040 /* Assets.xcassets */,
 				BABEF76F24E04C4800E49040 /* LaunchScreen.storyboard */,
 				BABEF77224E04C4800E49040 /* Info.plist */,
@@ -254,6 +283,10 @@
 		CD46FC6224E0841100EA0B15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CD07162E24E5B5E400FC2A06 /* LottieView.swift */,
+				CD07163224E5B6F300FC2A06 /* ConfettiLottie.swift */,
+				CD07163824E5CDF300FC2A06 /* PlantLottie.swift */,
+				CD07163624E5C44100FC2A06 /* ManLottie.swift */,
 				BA73A80324E245900042F390 /* Login */,
 				CDB8CA7024E3939000E7E3D4 /* Timer */,
 				BABEF76824E04C4600E49040 /* WelcomeHeader.swift */,
@@ -267,6 +300,7 @@
 		CDB8CA7024E3939000E7E3D4 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				CD07164424E5ECDF00FC2A06 /* Token.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -289,6 +323,9 @@
 			dependencies = (
 			);
 			name = "grow-ios";
+			packageProductDependencies = (
+				CD07162C24E5B58F00FC2A06 /* Lottie */,
+			);
 			productName = "grow-ios";
 			productReference = BABEF76124E04C4600E49040 /* grow-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -364,6 +401,9 @@
 				Base,
 			);
 			mainGroup = BABEF75824E04C4600E49040;
+			packageReferences = (
+				CD07162B24E5B58F00FC2A06 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = BABEF76224E04C4600E49040 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -380,8 +420,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD07163B24E5CE1100FC2A06 /* Plant.json in Resources */,
 				BABEF77124E04C4800E49040 /* LaunchScreen.storyboard in Resources */,
+				CD07163524E5C40900FC2A06 /* Working.json in Resources */,
 				BA24CB1824E4E2C500553C4A /* GoogleService-Info.plist in Resources */,
+				CD07164324E5EBDD00FC2A06 /* Cabin-SemiBoldItalic.ttf in Resources */,
+				CD07163E24E5EBDD00FC2A06 /* Cabin-Italic.ttf in Resources */,
+				CD07164224E5EBDD00FC2A06 /* Cabin-SemiBold.ttf in Resources */,
+				CD07164124E5EBDD00FC2A06 /* Cabin-Regular.ttf in Resources */,
+				CD07163F24E5EBDD00FC2A06 /* Cabin-Medium.ttf in Resources */,
+				CD07163124E5B61F00FC2A06 /* Confetti.json in Resources */,
+				CD07164024E5EBDD00FC2A06 /* Cabin-MediumItalic.ttf in Resources */,
+				CD07163C24E5EBDD00FC2A06 /* Cabin-Bold.ttf in Resources */,
+				CD07163D24E5EBDD00FC2A06 /* Cabin-BoldItalic.ttf in Resources */,
 				BABEF76E24E04C4800E49040 /* Preview Assets.xcassets in Resources */,
 				BABEF76B24E04C4800E49040 /* Assets.xcassets in Resources */,
 			);
@@ -518,11 +569,16 @@
 				BA24CB1A24E4E3CA00553C4A /* FirebaseHelper.swift in Sources */,
 				BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */,
 				CD06438E24E4B9B0007FD443 /* TimerManager.swift in Sources */,
+				CD07162F24E5B5E400FC2A06 /* LottieView.swift in Sources */,
 				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
 				BA73A80724E248290042F390 /* Palette.swift in Sources */,
 				CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */,
+				CD07164524E5ECDF00FC2A06 /* Token.swift in Sources */,
+				CD07163724E5C44100FC2A06 /* ManLottie.swift in Sources */,
+				CD07163924E5CDF300FC2A06 /* PlantLottie.swift in Sources */,
 				BA595B0224E379A10067ED08 /* LoginField.swift in Sources */,
 				BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */,
+				CD07163324E5B6F300FC2A06 /* ConfettiLottie.swift in Sources */,
 				BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */,
 				CDB8CA6F24E386F800E7E3D4 /* FocusTime.swift in Sources */,
 				CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */,
@@ -692,6 +748,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"grow-ios/Preview Content\"";
 				DEVELOPMENT_TEAM = V79782M5XQ;
 				ENABLE_PREVIEWS = YES;
@@ -714,6 +771,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"grow-ios/Preview Content\"";
 				DEVELOPMENT_TEAM = V79782M5XQ;
 				ENABLE_PREVIEWS = YES;
@@ -858,6 +916,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD07162B24E5B58F00FC2A06 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD07162C24E5B58F00FC2A06 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD07162B24E5B58F00FC2A06 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BABEF75924E04C4600E49040 /* Project object */;
 }
