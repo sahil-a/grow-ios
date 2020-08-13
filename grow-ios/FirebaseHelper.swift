@@ -12,7 +12,7 @@ import FirebaseFirestore
 private var helper = FirebaseHelper()
 
 class FirebaseHelper {
-    var shared: FirebaseHelper = helper
+    static var shared: FirebaseHelper = helper
     private let db: Firestore = Firestore.firestore()
     
     func validatePlantCode(plantCode: String, completionHandler: @escaping (Bool) -> Void) {

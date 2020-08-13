@@ -21,7 +21,13 @@ struct MaterialUITextField: UIViewRepresentable {
         textField.placeholderActiveColor = Color.green1.uiColor()
         textField.dividerActiveColor = Color.green1.uiColor()
         textField.text = text
-        textField.delegate = context.coordinator
+        textField.isUserInteractionEnabled = true
+        //textField.delegate = context.coordinator
+        if placeholder == "name" {
+            (UIApplication.shared.delegate as! AppDelegate).nameTextField = textField
+        } else if placeholder == "plant code" {
+            (UIApplication.shared.delegate as! AppDelegate).plantCodeTextField = textField
+        }
         return textField
     }
 
@@ -31,18 +37,18 @@ struct MaterialUITextField: UIViewRepresentable {
     }
     
     func makeCoordinator() -> MaterialUITextField.Coordinator {
-        Coordinator(parent: self)
+        Coordinator($text)
     }
 
     class Coordinator: NSObject, UITextFieldDelegate {
-        var parent: MaterialUITextField
+        var text:Binding<String>
 
-        init(parent: MaterialUITextField) {
-            self.parent = parent
+        init(_ text:Binding<String>) {
+            self.text = text
         }
 
-        func textFieldDidEndEditing(_ textField: UITextField) {
-            parent.text = textField.text ?? ""
+        func textViewDidChange(_ textField: UITextField) {
+            self.text.wrappedValue = textField.text ?? ""
         }
 
     }

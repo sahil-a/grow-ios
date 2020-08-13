@@ -32,6 +32,8 @@ extension UIApplication {
 struct Login: View {
     @State var name: String = ""
     @State var plantCode: String = ""
+    @ObservedObject var viewRouter: ViewRouter
+    @ObservedObject var userDataWrapper: UserDataWrapper
     var body: some View {
         Background {
             VStack(alignment: .leading) {
@@ -39,7 +41,22 @@ struct Login: View {
                 LoginField(title: "who are you?", placeholder: "name", text: self.$name).padding(.top, 50)
                 LoginField(title: "what is your plant's code?", placeholder: "plant code", text: self.$plantCode).padding(.top, 20)
                 Button(action: {
-                    
+                    let name = (UIApplication.shared.delegate as! AppDelegate).nameTextField.text ?? ""
+                    let plantCode = (UIApplication.shared.delegate as! AppDelegate).plantCodeTextField.text ?? ""
+                    if (plantCode != "" && name != "") {
+                        UserData.login(name: name, plantCode: plantCode) { userData in
+                            if let userData = userData {
+                                DispatchQueue.main.async {
+                                    self.userDataWrapper.userData = userData
+                                    self.viewRouter.currentPage = "home"
+                                }
+                            } else {
+                                // handle invalid plant code (or network failure)
+                            }
+                        }
+                    } else {
+                        // handle fields not filled out
+                    }
                 }){
                     ZStack {
                         RoundedRectangle(cornerRadius: 7).stroke(Color.green1, lineWidth: 2).frame(width: 100, height: 45).foregroundColor(Color.clear)
@@ -61,14 +78,9 @@ struct Login: View {
         }.onTapGesture {
             self.endEditing()
         }
+        
     }
     private func endEditing() {
         UIApplication.shared.endEditing()
-    }
-}
-
-struct Login_Previews: PreviewProvider {
-    static var previews: some View {
-        Login()
     }
 }

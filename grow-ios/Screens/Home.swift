@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Home: View {
+    @State var userData: UserData
     var body: some View {
         NavigationView {
             VStack(alignment: .leading){
@@ -24,11 +25,5 @@ struct Home: View {
                 }
             }.padding(.top, -50.0)
         }
-    }
-}
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Home()
     }
 }
