@@ -8,7 +8,11 @@
 
 import SwiftUI
  
-let nums = [1,2,3,4]
+ let activities = [
+    ActivityData(timeString: "1h", seconds: 5),
+    ActivityData(timeString: "2h", seconds: 7200)
+ 
+ ]
 
 struct FocusActivityList: View {
     var body: some View {
@@ -20,9 +24,9 @@ struct FocusActivityList: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
-                    ForEach(nums, id: \.self) { num in
-                        NavigationLink(destination: FocusTime(time: "1h")) {
-                            FocusActivity(color: Color.green3, text: "\(num)")
+                    ForEach(activities, id: \.self) { activity in
+                        NavigationLink(destination: FocusTime(startTimeSeconds: activity.seconds, time: activity.timeString)) {
+                            FocusActivity(color: Color.green3, text: "\(activity.timeString)")
                                 
                         }
                     }

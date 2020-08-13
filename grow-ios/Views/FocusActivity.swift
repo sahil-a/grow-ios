@@ -29,6 +29,11 @@ struct FocusActivity: View {
     }
 }
 
+struct ActivityData: Hashable {
+    let timeString: String
+    let seconds: Int
+}
+
 struct FocusActivity_Previews: PreviewProvider {
     static var previews: some View {
         FocusActivity(color: Color.green1, text: "1h")

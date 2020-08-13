@@ -22,10 +22,12 @@
 		BABEF77124E04C4800E49040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABEF76F24E04C4800E49040 /* LaunchScreen.storyboard */; };
 		BABEF77C24E04C4800E49040 /* grow_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF77B24E04C4800E49040 /* grow_iosTests.swift */; };
 		BABEF78724E04C4800E49040 /* grow_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABEF78624E04C4800E49040 /* grow_iosUITests.swift */; };
+		CD06438A24E4B61A007FD443 /* TimerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06438924E4B61A007FD443 /* TimerTest.swift */; };
+		CD06438E24E4B9B0007FD443 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD06438D24E4B9B0007FD443 /* TimerManager.swift */; };
 		CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6324E0844A00EA0B15 /* Home.swift */; };
 		CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6524E085F000EA0B15 /* FocusActivity.swift */; };
 		CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */; };
-		CDB8CA6F24E386F800E7E3D4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8CA6E24E386F800E7E3D4 /* Timer.swift */; };
+		CDB8CA6F24E386F800E7E3D4 /* FocusTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB8CA6E24E386F800E7E3D4 /* FocusTime.swift */; };
 		F318B59850AF17BBCBFD8BDC /* Pods_grow_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D41AF2D2DB805D9F9A64F9 /* Pods_grow_iosTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,10 +84,12 @@
 		BABEF79B24E09E5900E49040 /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
 		C474D8BE891C05055CB15EAA /* Pods_grow_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_grow_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C56B1F26BEFB6CA5E11030FA /* Pods-grow-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-ios.debug.xcconfig"; path = "Target Support Files/Pods-grow-ios/Pods-grow-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		CD06438924E4B61A007FD443 /* TimerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTest.swift; sourceTree = "<group>"; };
+		CD06438D24E4B9B0007FD443 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		CD46FC6324E0844A00EA0B15 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		CD46FC6524E085F000EA0B15 /* FocusActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivity.swift; sourceTree = "<group>"; };
 		CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusActivityList.swift; sourceTree = "<group>"; };
-		CDB8CA6E24E386F800E7E3D4 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		CDB8CA6E24E386F800E7E3D4 /* FocusTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusTime.swift; sourceTree = "<group>"; };
 		D5D7D8939E29120E3C35FFE0 /* Pods-grow-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-ios.release.xcconfig"; path = "Target Support Files/Pods-grow-ios/Pods-grow-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,9 +147,10 @@
 		BA73A80024E245050042F390 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				CDB8CA6E24E386F800E7E3D4 /* Timer.swift */,
+				CDB8CA6E24E386F800E7E3D4 /* FocusTime.swift */,
 				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 				BA73A80124E245180042F390 /* Login.swift */,
+				CD06438924E4B61A007FD443 /* TimerTest.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				BA73A80624E248290042F390 /* Palette.swift */,
+				CD06438D24E4B9B0007FD443 /* TimerManager.swift */,
 				CD46FC6224E0841100EA0B15 /* Views */,
 				BA73A80024E245050042F390 /* Screens */,
 				BABEF76424E04C4600E49040 /* AppDelegate.swift */,
@@ -242,10 +248,10 @@
 		CD46FC6224E0841100EA0B15 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BA73A80324E245900042F390 /* Login */,
 				CDB8CA7024E3939000E7E3D4 /* Timer */,
 				BABEF76824E04C4600E49040 /* WelcomeHeader.swift */,
 				CD46FC6524E085F000EA0B15 /* FocusActivity.swift */,
-				BA73A80324E245900042F390 /* Login */,
 				CD46FC6724E088B500EA0B15 /* FocusActivityList.swift */,
 				BA79175024E382340012EDFC /* MaterialUITextField.swift */,
 			);
@@ -501,14 +507,16 @@
 				BA73A80224E245180042F390 /* Login.swift in Sources */,
 				BA79175124E382340012EDFC /* MaterialUITextField.swift in Sources */,
 				BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */,
+				CD06438A24E4B61A007FD443 /* TimerTest.swift in Sources */,
 				BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */,
+				CD06438E24E4B9B0007FD443 /* TimerManager.swift in Sources */,
 				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
 				BA73A80724E248290042F390 /* Palette.swift in Sources */,
 				CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */,
 				BA595B0224E379A10067ED08 /* LoginField.swift in Sources */,
 				BABEF76924E04C4600E49040 /* WelcomeHeader.swift in Sources */,
 				BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */,
-				CDB8CA6F24E386F800E7E3D4 /* Timer.swift in Sources */,
+				CDB8CA6F24E386F800E7E3D4 /* FocusTime.swift in Sources */,
 				CD46FC6824E088B500EA0B15 /* FocusActivityList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

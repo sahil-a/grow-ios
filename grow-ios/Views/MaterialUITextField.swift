@@ -13,7 +13,7 @@ import Material
 struct MaterialUITextField: UIViewRepresentable {
     @Binding var placeholder: String
     @Binding var text: String
-
+ 
     func makeUIView(context: Context) -> Material.TextField {
         let textField = Material.TextField()
         textField.placeholder = placeholder
