@@ -14,7 +14,14 @@ struct Token: View {
             Spacer()
             Circle()
                 .frame(width: 50, height: 50)
-                .padding(.trailing, 50)
+                .padding(.trailing, 30)
+                .foregroundColor(Color.red)
+                .overlay(
+                    Circle()
+                        .stroke(style: StrokeStyle(lineWidth: 5))
+                    .padding(.trailing, 30)
+                    
+            )
         }
     }
 }

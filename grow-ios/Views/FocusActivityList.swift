@@ -20,6 +20,7 @@ import SwiftUI
 struct FocusActivityList: View {
     
     @State private var showModal: Bool = false
+    var userData: UserData
     @State var active: ActivityData = ActivityData(timeString: "1h", seconds: 3600, color: Color.green)
     var body: some View {
     
@@ -31,7 +32,6 @@ struct FocusActivityList: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
                     ForEach(activities, id: \.self) { activity in
-                        
                         FocusActivity(color: activity.color, text: "\(activity.timeString)")
                             .onTapGesture {
                                 self.active = activity
@@ -42,17 +42,11 @@ struct FocusActivityList: View {
                     // TODO: insert custom FocusActivity
                 }
                 .sheet(isPresented: $showModal) {
-                    FocusTime(startTimeSeconds: self.active.seconds, time: self.active.timeString)
+                    FocusTime(userData: self.userData, startTimeSeconds: self.active.seconds, time: self.active.timeString)
                 }
                 .padding([.leading, .trailing], 30)
                 .frame(height: 200)
             }
         }
-    }
-}
-
-struct FocusActivityList_Previews: PreviewProvider {
-    static var previews: some View {
-        FocusActivityList()
     }
 }

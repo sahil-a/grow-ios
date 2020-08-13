@@ -9,15 +9,18 @@
 import SwiftUI
 
 struct Home: View {
-    @State var userData: UserData
+    var userData: UserData
     var body: some View {
         NavigationView {
             ZStack(alignment: .bottomTrailing){
                 VStack(alignment: .leading){
+                    Token()
+                        .padding(.top, -25)
                     WelcomeHeader(name: "Abhishek", streak: 5)
                         .padding(.bottom, 75)
+                        .padding(.top, -5)
                         .padding(.leading, 30)
-                    FocusActivityList()
+                    FocusActivityList(userData: userData)
                     Spacer()
 //                    HStack {
 //                        Spacer()

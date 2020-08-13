@@ -11,6 +11,7 @@ import SwiftUI
 struct FocusTime: View {
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    var userData: UserData
     @ObservedObject var timerManager = TimerManager()
     @State var percentage: CGFloat = 100
     
@@ -37,7 +38,9 @@ struct FocusTime: View {
                         
                     }
                 } else {
-                    Text("Completed")
+                    Text("E").onAppear() {
+                        self.userData.drops = self.userData.drops! + 10
+                    }
                 }
                 Spacer()
                 Image(systemName: timerManager.timerMode == .running ? "pause.circle.fill" : "play.circle.fill")
@@ -61,12 +64,6 @@ struct FocusTime: View {
             }
             //PlantLottie()
         }
-    }
-}
-
-struct FocusTime_Previews: PreviewProvider {
-    static var previews: some View {
-        FocusTime(startTimeSeconds: 5, time: "1h")
     }
 }
 
