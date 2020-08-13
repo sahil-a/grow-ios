@@ -12,8 +12,7 @@ import SwiftUI
 class TimerManager: ObservableObject {
     
     @Published var timerMode: TimerMode = .initial
-    @Published var formattedTime: String = "00:00"
-    @Published var secondsLeft = UserDefaults.standard.integer(forKey: "timerLength")
+    @Published var secondsLeft = 0
     
     var timer = Timer()
     
@@ -22,9 +21,12 @@ class TimerManager: ObservableObject {
         self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             
             if self.secondsLeft == 0 {
-                self.reset()
+                self.timerMode = .initial
+                self.timer.invalidate()
+                print("Completed")
+            } else {
+                self.secondsLeft -= 1
             }
-            self.secondsLeft -= 1
             
         })
     }
@@ -35,9 +37,9 @@ class TimerManager: ObservableObject {
         secondsLeft = seconds 
     }
     
-    func reset() {
+    func reset(seconds: Int) {
         self.timerMode = .initial
-        self.secondsLeft = UserDefaults.standard.integer(forKey: "timerLength")
+        self.secondsLeft = seconds
         self.timer.invalidate()
     }
     

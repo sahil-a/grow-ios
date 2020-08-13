@@ -11,12 +11,15 @@ import SwiftUI
  let activities = [
     ActivityData(timeString: "1h", seconds: 3600),
     ActivityData(timeString: "2h", seconds: 7200),
-    ActivityData(timeString: "5m", seconds: 5),
+    ActivityData(timeString: "5s", seconds: 5),
 
  
  ]
 
 struct FocusActivityList: View {
+    
+    @State private var showModal: Bool = false
+    @State var active: ActivityData = ActivityData(timeString: "1h", seconds: 3600)
     var body: some View {
     
         VStack(alignment: .leading) {
@@ -27,12 +30,18 @@ struct FocusActivityList: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 30) {
                     ForEach(activities, id: \.self) { activity in
-                        NavigationLink(destination: FocusTime(startTimeSeconds: activity.seconds, time: activity.timeString)) {
-                            FocusActivity(color: Color.green3, text: "\(activity.timeString)")
-                                
+                        
+                        FocusActivity(color: Color.green3, text: "\(activity.timeString)")
+                            .onTapGesture {
+                                self.active = activity
+                                self.showModal.toggle()
                         }
+                        
                     }
                     // TODO: insert custom FocusActivity
+                }
+                .sheet(isPresented: $showModal) {
+                    FocusTime(startTimeSeconds: self.active.seconds, time: self.active.timeString)
                 }
                 .padding(.leading, 30)
                 .frame(height: 200)
