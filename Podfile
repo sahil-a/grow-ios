@@ -7,6 +7,7 @@ target 'grow-ios' do
 
   # Pods for grow-ios
   pod 'Material', '~> 3.1.0'
+  pod 'Firebase/Firestore'
 
   target 'grow-iosTests' do
     inherit! :search_paths

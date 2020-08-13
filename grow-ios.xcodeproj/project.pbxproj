@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7461FEBBA6591F17F4028A2D /* Pods_grow_ios_grow_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421AC44482A5C893355028A5 /* Pods_grow_ios_grow_iosUITests.framework */; };
 		9D1336511A8C17150E791810 /* Pods_grow_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C474D8BE891C05055CB15EAA /* Pods_grow_ios.framework */; };
+		BA24CB1824E4E2C500553C4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA24CB1724E4E2C500553C4A /* GoogleService-Info.plist */; };
+		BA24CB1A24E4E3CA00553C4A /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24CB1924E4E3CA00553C4A /* FirebaseHelper.swift */; };
 		BA595B0224E379A10067ED08 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA595B0124E379A10067ED08 /* LoginField.swift */; };
 		BA73A80224E245180042F390 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80124E245180042F390 /* Login.swift */; };
 		BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80424E245AF0042F390 /* LoginHeader.swift */; };
@@ -55,6 +57,8 @@
 		95D30B6B82F0B7ECDB0F4642 /* Pods-grow-ios-grow-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-ios-grow-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-grow-ios-grow-iosUITests/Pods-grow-ios-grow-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A7CF448E744B80F344F344E /* Pods-grow-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-grow-iosTests/Pods-grow-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA13412E58BA859493FD12D1 /* Pods-grow-ios-grow-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-ios-grow-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-grow-ios-grow-iosUITests/Pods-grow-ios-grow-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA24CB1724E4E2C500553C4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA24CB1924E4E3CA00553C4A /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		BA595B0124E379A10067ED08 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
 		BA73A80124E245180042F390 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BA73A80424E245AF0042F390 /* LoginHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeader.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 		BABEF76324E04C4600E49040 /* grow-ios */ = {
 			isa = PBXGroup;
 			children = (
+				BA24CB1724E4E2C500553C4A /* GoogleService-Info.plist */,
+				BA24CB1924E4E3CA00553C4A /* FirebaseHelper.swift */,
 				BA73A80624E248290042F390 /* Palette.swift */,
 				CD06438D24E4B9B0007FD443 /* TimerManager.swift */,
 				CD46FC6224E0841100EA0B15 /* Views */,
@@ -375,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABEF77124E04C4800E49040 /* LaunchScreen.storyboard in Resources */,
+				BA24CB1824E4E2C500553C4A /* GoogleService-Info.plist in Resources */,
 				BABEF76E24E04C4800E49040 /* Preview Assets.xcassets in Resources */,
 				BABEF76B24E04C4800E49040 /* Assets.xcassets in Resources */,
 			);
@@ -508,6 +515,7 @@
 				BA79175124E382340012EDFC /* MaterialUITextField.swift in Sources */,
 				BABEF76524E04C4600E49040 /* AppDelegate.swift in Sources */,
 				CD06438A24E4B61A007FD443 /* TimerTest.swift in Sources */,
+				BA24CB1A24E4E3CA00553C4A /* FirebaseHelper.swift in Sources */,
 				BABEF76724E04C4600E49040 /* SceneDelegate.swift in Sources */,
 				CD06438E24E4B9B0007FD443 /* TimerManager.swift in Sources */,
 				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
