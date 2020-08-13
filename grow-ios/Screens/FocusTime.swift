@@ -11,6 +11,7 @@ import SwiftUI
 struct FocusTime: View {
 
     @ObservedObject var timerManager = TimerManager()
+    @State var percentage: Float = 100
     
     let startTimeSeconds: Int
     let time: String
@@ -21,7 +22,7 @@ struct FocusTime: View {
                 .font(.custom("Cabin-Bold", size: 24))
             Spacer()
             Text("\(getFormattedTime(seconds: timerManager.secondsLeft))")
-                .font(.custom("Cabin-Bold", size: 30))
+                .font(.custom("Cabin-Bold", size: 65))
                 .foregroundColor(Color.green3)
                 .onAppear() {
                     self.timerManager.setTimerLength(seconds: self.startTimeSeconds )
@@ -34,7 +35,8 @@ struct FocusTime: View {
                 .padding(.bottom, 50)
                 .onTapGesture(perform: {
                 if self.timerManager.timerMode == .initial {
-                    self.timerManager.setTimerLength(seconds: self.startTimeSeconds )                }
+                    self.timerManager.setTimerLength(seconds: self.startTimeSeconds)
+                }
                 self.timerManager.timerMode == .running ? self.timerManager.pause() : self.timerManager.start()
                 
                 })
@@ -49,25 +51,22 @@ struct FocusTime_Previews: PreviewProvider {
     }
 }
 
-struct ContentView: View {
-    @Binding var timeRemaining: Int
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
+struct Outline {
+    var percentage: CGFloat = 0
+    var colors: [Color] = [Color.green]
+    
     var body: some View {
-        Text("\(timeRemaining)")
-            .onReceive(timer) { _ in
-                if self.timeRemaining > 0 {
-                    self.timeRemaining -= 1
-                }
-            }
+        ZStack {
+            Circle()
+                .fill(Color.clear)
+                .frame(width: 250, height: 250)
+            .overlay(
+                Circle()
+                    .trim(from: 0.0, to: percentage * 0.01)
+            )
+            
+        }
     }
-        
+    
 }
-
-enum TimerMode {
-    case running
-    case paused
-    case initial
-}
-
 

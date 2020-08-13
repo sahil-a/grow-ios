@@ -52,9 +52,11 @@ func getFormattedTime(seconds: Int) -> String  {
     
     var hourStamp = ""
     var minuteStamp = ""
+    var secondStamp = ""
     
     let hours = seconds / 3600
     let minutes = seconds % 3600 / 60
+    let secs = seconds % 3600 % 60
     
     if hours < 10 {
         hourStamp = "0\(hours)"
@@ -68,5 +70,24 @@ func getFormattedTime(seconds: Int) -> String  {
         minuteStamp = "\(minutes)"
     }
     
-    return "\(hourStamp):\(minuteStamp)"
+    if secs < 10 {
+        secondStamp = "0\(secs)"
+    } else {
+        secondStamp = "\(secs)"
+    }
+    
+    
+    if hours != 0 {
+        return "\(hourStamp):\(minuteStamp)"
+    } else {
+        return "\(minuteStamp):\(secondStamp)"
+    }
+    
+}
+
+
+enum TimerMode {
+    case running
+    case paused
+    case initial
 }

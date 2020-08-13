@@ -9,8 +9,10 @@
 import SwiftUI
  
  let activities = [
-    ActivityData(timeString: "1h", seconds: 5),
-    ActivityData(timeString: "2h", seconds: 7200)
+    ActivityData(timeString: "1h", seconds: 3600),
+    ActivityData(timeString: "2h", seconds: 7200),
+    ActivityData(timeString: "5m", seconds: 5),
+
  
  ]
 
