@@ -12,18 +12,22 @@ struct Home: View {
     @State var userData: UserData
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading){
-                WelcomeHeader(name: "Abhishek", streak: 5)
-                    .padding(.bottom, 75)
-                    .padding(.leading, 30)
-                FocusActivityList()
-                Spacer()
-                HStack {
+            ZStack(alignment: .bottomTrailing){
+                VStack(alignment: .leading){
+                    WelcomeHeader(name: "Abhishek", streak: 5)
+                        .padding(.bottom, 75)
+                        .padding(.leading, 30)
+                    FocusActivityList()
                     Spacer()
-                    Image("weow")
-                        .padding(.bottom, 50)
-                }
-            }.padding(.top, -50.0)
+//                    HStack {
+//                        Spacer()
+//                        Image("weow")
+//                            .padding(.bottom, 50)
+//                    }
+                }.padding(.top, -50.0)
+                ManLottie()
+            }
+            
         }
     }
 }

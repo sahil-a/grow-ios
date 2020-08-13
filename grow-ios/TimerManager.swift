@@ -12,8 +12,7 @@ import SwiftUI
 class TimerManager: ObservableObject {
     
     @Published var timerMode: TimerMode = .initial
-    @Published var formattedTime: String = "00:00"
-    @Published var secondsLeft = UserDefaults.standard.integer(forKey: "timerLength")
+    @Published var secondsLeft = 100 
     
     var timer = Timer()
     
@@ -22,9 +21,12 @@ class TimerManager: ObservableObject {
         self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { timer in
             
             if self.secondsLeft == 0 {
-                self.reset()
+                self.timerMode = .initial
+                self.timer.invalidate()
+                print("Completed")
+            } else {
+                self.secondsLeft -= 1
             }
-            self.secondsLeft -= 1
             
         })
     }
@@ -35,9 +37,9 @@ class TimerManager: ObservableObject {
         secondsLeft = seconds 
     }
     
-    func reset() {
+    func reset(seconds: Int) {
         self.timerMode = .initial
-        self.secondsLeft = UserDefaults.standard.integer(forKey: "timerLength")
+        self.secondsLeft = seconds
         self.timer.invalidate()
     }
     
@@ -52,9 +54,11 @@ func getFormattedTime(seconds: Int) -> String  {
     
     var hourStamp = ""
     var minuteStamp = ""
+    var secondStamp = ""
     
     let hours = seconds / 3600
     let minutes = seconds % 3600 / 60
+    let secs = seconds % 3600 % 60
     
     if hours < 10 {
         hourStamp = "0\(hours)"
@@ -68,5 +72,24 @@ func getFormattedTime(seconds: Int) -> String  {
         minuteStamp = "\(minutes)"
     }
     
-    return "\(hourStamp):\(minuteStamp)"
+    if secs < 10 {
+        secondStamp = "0\(secs)"
+    } else {
+        secondStamp = "\(secs)"
+    }
+    
+    
+    if hours != 0 {
+        return "\(hourStamp):\(minuteStamp)"
+    } else {
+        return "\(minuteStamp):\(secondStamp)"
+    }
+    
+}
+
+
+enum TimerMode {
+    case running
+    case paused
+    case initial
 }

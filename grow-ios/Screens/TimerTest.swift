@@ -32,7 +32,7 @@ struct TimerTest: View {
             if timerManager.timerMode == .paused {
                 Image(systemName: "gobackward")
                 .onTapGesture(perform: {
-                    self.timerManager.reset()
+                    self.timerManager.reset(seconds: 6)
                 })
             }
             
