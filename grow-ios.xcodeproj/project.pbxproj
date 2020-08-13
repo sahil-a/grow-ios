@@ -11,6 +11,8 @@
 		9D1336511A8C17150E791810 /* Pods_grow_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C474D8BE891C05055CB15EAA /* Pods_grow_ios.framework */; };
 		BA24CB1824E4E2C500553C4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA24CB1724E4E2C500553C4A /* GoogleService-Info.plist */; };
 		BA24CB1A24E4E3CA00553C4A /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24CB1924E4E3CA00553C4A /* FirebaseHelper.swift */; };
+		BA24CB3024E5F57C00553C4A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24CB2F24E5F57C00553C4A /* UserData.swift */; };
+		BA24CB3224E5F59A00553C4A /* RoutingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA24CB3124E5F59A00553C4A /* RoutingView.swift */; };
 		BA595B0224E379A10067ED08 /* LoginField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA595B0124E379A10067ED08 /* LoginField.swift */; };
 		BA73A80224E245180042F390 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80124E245180042F390 /* Login.swift */; };
 		BA73A80524E245AF0042F390 /* LoginHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA73A80424E245AF0042F390 /* LoginHeader.swift */; };
@@ -76,6 +78,8 @@
 		BA13412E58BA859493FD12D1 /* Pods-grow-ios-grow-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-grow-ios-grow-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-grow-ios-grow-iosUITests/Pods-grow-ios-grow-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA24CB1724E4E2C500553C4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BA24CB1924E4E3CA00553C4A /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		BA24CB2F24E5F57C00553C4A /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BA24CB3124E5F59A00553C4A /* RoutingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingView.swift; sourceTree = "<group>"; };
 		BA595B0124E379A10067ED08 /* LoginField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginField.swift; sourceTree = "<group>"; };
 		BA73A80124E245180042F390 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BA73A80424E245AF0042F390 /* LoginHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHeader.swift; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 				CDB8CA6E24E386F800E7E3D4 /* FocusTime.swift */,
 				CD46FC6324E0844A00EA0B15 /* Home.swift */,
 				BA73A80124E245180042F390 /* Login.swift */,
+				BA24CB3124E5F59A00553C4A /* RoutingView.swift */,
 				CD06438924E4B61A007FD443 /* TimerTest.swift */,
 			);
 			path = Screens;
@@ -223,6 +228,7 @@
 		BABEF76324E04C4600E49040 /* grow-ios */ = {
 			isa = PBXGroup;
 			children = (
+				BA24CB2F24E5F57C00553C4A /* UserData.swift */,
 				BABEF76424E04C4600E49040 /* AppDelegate.swift */,
 				BABEF76624E04C4600E49040 /* SceneDelegate.swift */,
 				BA24CB1924E4E3CA00553C4A /* FirebaseHelper.swift */,
@@ -571,9 +577,11 @@
 				CD06438E24E4B9B0007FD443 /* TimerManager.swift in Sources */,
 				CD07162F24E5B5E400FC2A06 /* LottieView.swift in Sources */,
 				CD46FC6424E0844A00EA0B15 /* Home.swift in Sources */,
+				BA24CB3024E5F57C00553C4A /* UserData.swift in Sources */,
 				BA73A80724E248290042F390 /* Palette.swift in Sources */,
 				CD46FC6624E085F000EA0B15 /* FocusActivity.swift in Sources */,
 				CD07164524E5ECDF00FC2A06 /* Token.swift in Sources */,
+				BA24CB3224E5F59A00553C4A /* RoutingView.swift in Sources */,
 				CD07163724E5C44100FC2A06 /* ManLottie.swift in Sources */,
 				CD07163924E5CDF300FC2A06 /* PlantLottie.swift in Sources */,
 				BA595B0224E379A10067ED08 /* LoginField.swift in Sources */,
